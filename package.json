@@ -1,0 +1,55 @@
+{
+  "name": "shadertoy-to-video",
+  "version": "1.0.0",
+  "description": "Render a ShaderToy script directly to a video file.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GonzaloHirsch/shadertoy-to-video.git"
+  },
+  "author": "Gonzalo Hirsch <hirschgonzalo@gmail.com> (https://gonzalohirsch.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloHirsch/shadertoy-to-video/issues"
+  },
+  "homepage": "",
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "docs/changelog.md"
+        }
+      ],
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "docs/changelog.md",
+            "package.json"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "10.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.0.4",
+    "@semantic-release/npm": "10.0.4",
+    "@semantic-release/release-notes-generator": "11.0.4",
+    "semantic-release": "21.0.7"
+  }
+}
