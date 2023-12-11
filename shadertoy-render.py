@@ -59,10 +59,6 @@ except:
 
 vertex = \
     """
-#version 140
-#extension GL_ARB_shader_bit_encoding : enable
-#extension GL_ARB_gpu_shader5 : enable
-
 attribute vec2 position;
 void main()
 {
@@ -72,11 +68,6 @@ void main()
 
 fragment_template = \
     """
-#version 140
-
-#extension GL_ARB_shader_bit_encoding : enable
-#extension GL_ARB_gpu_shader5 : enable
-
 uniform vec3      iResolution;           // viewport resolution (in pixels)
 uniform float     iGlobalTime;           // shader playback time (in seconds)
 uniform vec4      iMouse;                // mouse pixel coords
