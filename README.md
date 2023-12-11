@@ -98,12 +98,9 @@ And check for used **buffers and textures parameters**, this script has _clamp_t
 2. press _Win+R_ write **cmd** to launch console
 3. in Windows console write
 
-.. code-block:: bash
-pip install vispy
-pip install watchdog
-pip install glfw
-pip install Pillow
-pip install imageio
+```bash
+pip install vispy watchdog glfw Pillow imageio PyQt5
+```
 
 4. **download** `ffmpeg-git-full <https://ffmpeg.org/download.html#build-windows>`\_ (example - Windows builds from gyan - ffmpeg-git-full.7z) and extract
 5. **download** or clone this **shadertoy-to-video-with-FBO**
