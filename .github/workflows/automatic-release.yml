@@ -37,6 +37,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+      - name: 'Installing dependencies'
+        run: npm install --omit=dev
       - name: 'Releasing via Semantic Release'
         run: npx semantic-release@21
         env:
