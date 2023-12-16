@@ -1,6 +1,6 @@
 {
   "name": "shadertoy-to-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Render a ShaderToy script directly to a video file.",
   "private": true,
   "scripts": {

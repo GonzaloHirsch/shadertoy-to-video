@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/GonzaloHirsch/shadertoy-to-video/compare/v1.0.0...v1.0.1) (2023-12-16)
+
+
+### Bug Fixes
+
+* COLAB variable ([aef37ed](https://github.com/GonzaloHirsch/shadertoy-to-video/commit/aef37ed3025ab573dd7e2db519de45543b5f555b))
+
 # 1.0.0 (2023-12-11)
 
 
