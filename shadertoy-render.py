@@ -52,10 +52,14 @@ except ImportError:
   print("not using imageio")
 
 try:
-  import google.colab
-  IN_COLAB = True
+  display_set = os.environ.get("DISPLAY", None)
+  print(display_set, not display_set)
+  if not display_set or len(display_set) == 0:
+    SERVER = True
+  else:
+    SERVER = False
 except:
-  IN_COLAB = False
+  SERVER = False
 
 vertex = \
     """
@@ -849,7 +853,7 @@ if __name__ == '__main__':
         if(len(args.vispy_use)>2):
           vispy.use(args.vispy_use)
         else:
-          if(IN_COLAB):
+          if(SERVER):
             vispy.use('egl')
           else:
             vispy.use(app='Glfw', gl="gl+")
